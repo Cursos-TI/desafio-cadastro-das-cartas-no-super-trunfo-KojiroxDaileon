@@ -26,6 +26,7 @@ int main() {
     float area1, area2; 
     float pib1, pib2;
 
+
     printf("Desafio novato: Criando as Cartas do Super Trunfo \n \n \n");
 
     // Inserindo dados da Carta 1
@@ -74,9 +75,18 @@ int main() {
     printf("\n Digite o numero de pontos turisticos da Cidade 2: \n \n \n \n");
     scanf("%i", &turistico2);
 
+    // divide a população da cidade pela area
+    float densidade1 = populacao1 / area1;
+    float densidade2 = populacao2 / area2;
 
-    printf("A Carta 1: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n Populacao: %i \n Area total: %.2f km2 \n O PIB: %.2f \n Numero de Pontos Turisticos %i \n \n \n", estado1, codigo1, cidade1, populacao1, area1, pib1, turistico1);
-    printf("A Carta 2: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n Populacao: %i \n Area total: %.2f km2 \n O PIB: %.2f \n Numero de Pontos Turisticos %i \n \n \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2);
+    // Divida o PIB da cidade pela sua população
+    float pibPerCapita1 = pib2 / populacao2;
+    float pibPerCapita2 = pib2 / populacao2;
+
+
+
+    printf("A Carta 1: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n Populacao: %i \n Area total: %.2f km2 \n O PIB: %.2f \n Numero de Pontos Turisticos %i \n Densidade Populacional %f \n PIB per Capita \n \n \n", estado1, codigo1, cidade1, populacao1, area1, pib1, turistico1, densidade1, pibPerCapita1);
+    printf("A Carta 2: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n Populacao: %i \n Area total: %.2f km2 \n O PIB: %.2f \n Numero de Pontos Turisticos %i \n Densidade Populacional %f \n PIB per Capita \n \n \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2, densidade2, pibPerCapita2);
 
 
 /* Estrutura da carta:

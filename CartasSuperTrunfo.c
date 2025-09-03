@@ -72,7 +72,7 @@ int main() {
     printf("\n Digite o PIB da Cidade 2: \n");
     scanf("%f", &pib2);
     
-    printf("\n Digite o numero de pontos turisticos da Cidade 2: \n \n \n \n");
+    printf("\n Digite o numero de pontos turisticos da Cidade 2: \n");
     scanf("%i", &turistico2);
 
     // divide a população da cidade pela area
@@ -80,13 +80,13 @@ int main() {
     float densidade2 = populacao2 / area2;
 
     // Divida o PIB da cidade pela sua população
-    float pibPerCapita1 = pib2 / populacao2;
+    float pibPerCapita1 = pib1 / populacao1;
     float pibPerCapita2 = pib2 / populacao2;
 
 
 
-    printf("A Carta 1: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n Populacao: %i \n Area total: %.2f km2 \n O PIB: %.2f \n Numero de Pontos Turisticos %i \n Densidade Populacional %f \n PIB per Capita \n \n \n", estado1, codigo1, cidade1, populacao1, area1, pib1, turistico1, densidade1, pibPerCapita1);
-    printf("A Carta 2: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n Populacao: %i \n Area total: %.2f km2 \n O PIB: %.2f \n Numero de Pontos Turisticos %i \n Densidade Populacional %f \n PIB per Capita \n \n \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2, densidade2, pibPerCapita2);
+    printf("A Carta 1: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n Populacao: %i \n Area total: %.2f km2 \n O PIB: %.2f \n Numero de Pontos Turisticos %i \n Densidade Populacional %f hab/km² \n PIB per Capita %f \n \n \n", estado1, codigo1, cidade1, populacao1, area1, pib1, turistico1, densidade1, pibPerCapita1);
+    printf("A Carta 2: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n Populacao: %i \n Area total: %.2f km2 \n O PIB: %.2f \n Numero de Pontos Turisticos %i \n Densidade Populacional %f hab/km² \n PIB per Capita %f \n \n \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2, densidade2, pibPerCapita2);
 
 
 /* Estrutura da carta:

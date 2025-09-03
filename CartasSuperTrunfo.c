@@ -80,8 +80,8 @@ int main() {
     float densidade2 = populacao2 / area2;
 
     // Divida o PIB da cidade pela sua população
-    float pibPerCapita1 = pib1 / populacao1;
-    float pibPerCapita2 = pib2 / populacao2;
+    float pibPerCapita1 = populacao1 / pib1;
+    float pibPerCapita2 = populacao2 / pib2;
 
 
 
